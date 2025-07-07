@@ -1,0 +1,61 @@
+{
+  "name": "@yukiakai/resolve-package",
+  "version": "1.0.0",
+  "description": "Reliable way to find the root directory of a Node.js package, even in pnpm monorepos.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+    "test": "npm run build && npx vitest run --reporter verbose --coverage",
+    "format": "prettier --write **/*.js",
+    "format:check": "prettier --check **/*.js",
+    "lint": "eslint src/**/*.js",
+    "build": "npx tsup"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "pnpm",
+    "resolve",
+    "node_modules",
+    "package root",
+    "monorepo",
+    "package.json"
+  ],
+  "author": "Yuki_akai",
+  "homepage": "https://github.com/yukiakai212/resolve-package",
+  "engines": {
+    "node": ">= 16"
+  },
+  "maintainers": [
+    {
+      "name": "Yuki_akai",
+      "homepage": "https://github.com/yukiakai212"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukiakai212/resolve-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yukiakai212/resolve-package/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.4",
+    "dotenv": "^17.0.1",
+    "eslint": "^9.30.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@yukiakai/find-up": "^1.0.0",
+    "resolve": "^1.22.10"
+  }
+}
