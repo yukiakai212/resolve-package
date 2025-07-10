@@ -4,4 +4,6 @@
 
 ### Patch Changes
 
-- c5b702e: fix resole import synctax
+#### 🐛 Bug Fixes
+- Fixed resolve import syntax
+- Correct typo in CLI help output

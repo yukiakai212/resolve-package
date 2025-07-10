@@ -6,7 +6,15 @@ import { findUp } from '@yukiakai/find-up';
 export const resolvePath = (pkgName, basedir) => {
   try {
     const pkgFilePath = resolveSync(pkgName, { basedir });
-    return pkgFilePath ? findUp('package.json', { basedir: path.dirname(pkgFilePath) }) : null;
+    return pkgFilePath
+      ? findUp('package.json', {
+          basedir: path.dirname(pkgFilePath),
+          matcher: (file) => {
+            const json = JSON.parse(fs.readFileSync(file));
+            if (json.name) return true;
+          },
+        })
+      : null;
   } catch {
     return null;
   }

@@ -23,6 +23,12 @@ describe.each([
     expect(meta.name).toBe('resolve');
     expect(meta.version).toMatch(/[0-9.]+/);
   });
+  it('resolveMetadata should return package.json contents', () => {
+    const meta = lib.resolveMetadata('glob');
+    expect(meta).toBeTypeOf('object');
+    expect(meta.name).toBe('glob');
+    expect(meta.version).toMatch(/[0-9.]+/);
+  });
 
   it('should return null for non-existent package', () => {
     const path = lib.resolvePath('this-package-does-not-exist');
