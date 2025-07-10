@@ -1,9 +1,9 @@
 import module from 'node:module';
 import { describe, it, expect } from 'vitest';
 import * as core from '../src/index.js';
-import * as esm from '../dist/index.js';
+import * as esm from '@yukiakai/resolve-package';
 const require = module.createRequire(import.meta.url);
-const cjs = require('../dist/index.cjs');
+const cjs = require('@yukiakai/resolve-package');
 
 describe.each([
   ['Core', core],

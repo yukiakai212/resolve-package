@@ -1,6 +1,6 @@
 import path from 'node:path';
 import fs from 'node:fs';
-import resolveSync from 'resolve/sync';
+import resolveSync from 'resolve/sync.js';
 import { findUp } from '@yukiakai/find-up';
 
 export const resolvePath = (pkgName, basedir) => {

@@ -115,9 +115,17 @@ A: Yes. It uses `resolve` under the hood, and always finds the correct installed
 
 ---
 
+## 📦 Changelog
+
+See full release notes in [CHANGELOG.md][changelog-url]
+
+---
+
 ## 📄 License
 
 MIT © 2025 [Yuki Akai](https://github.com/yukiakai212/)
+
+---
 
 [npm-downloads-image]: https://badgen.net/npm/dm/@yukiakai/resolve-package
 [npm-downloads-url]: https://www.npmjs.com/package/@yukiakai/resolve-package
@@ -127,3 +135,5 @@ MIT © 2025 [Yuki Akai](https://github.com/yukiakai212/)
 [github-url]: https://github.com/yukiakai212/resolve-package/
 [codecov-image]: https://codecov.io/gh/yukiakai212/resolve-package/branch/main/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/yukiakai212/resolve-package
+[changelog-url]: https://github.com/yukiakai212/resolve-package/blob/main/CHANGELOG.md
+
