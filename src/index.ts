@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import { sync as resolveSync } from 'resolve';
 import { findUp } from '@yukiakai/find-up';
 
-export const resolvePath = (pkgName: string, basedir: string = process.cwd()): string | null => {
+export const resolvePath = (pkgName: string, basedir?: string): string | null => {
   try {
     const pkgFilePath = resolveSync(pkgName, { basedir });
     return pkgFilePath
