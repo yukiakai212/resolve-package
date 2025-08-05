@@ -1,6 +1,6 @@
 {
   "name": "@yukiakai/resolve-package",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Reliable way to find the root directory of a Node.js package, even in pnpm monorepos.",
   "type": "module",
   "main": "./dist/index.js",
