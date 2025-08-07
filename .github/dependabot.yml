@@ -15,7 +15,3 @@ updates:
       - "dependencies"
     assignees:
       - "yukiakai212" #
-    allow:
-      - dependency-type: "direct"
-    ignore:
-      - dependency-name: "*" # 
