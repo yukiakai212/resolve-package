@@ -1,5 +1,11 @@
 # @yukiakai/resolve-package
 
+## 1.1.0
+
+### Minor Changes
+
+- c75a5ef: TS support
+
 ## 1.0.2
 
 ### Patch Changes
