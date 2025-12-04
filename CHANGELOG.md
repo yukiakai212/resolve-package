@@ -1,5 +1,11 @@
 # @yukiakai/resolve-package
 
+## 1.1.1
+
+### Patch Changes
+
+- 8d94a5a: Security patch release
+
 ## 1.1.0
 
 ### Minor Changes
