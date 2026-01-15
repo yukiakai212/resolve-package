@@ -1,5 +1,11 @@
 # @yukiakai/resolve-package
 
+## 1.1.2
+
+### Patch Changes
+
+- 1e3a2ed: Using Trusted Publisher
+
 ## 1.1.1
 
 ### Patch Changes
