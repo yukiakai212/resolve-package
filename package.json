@@ -32,6 +32,7 @@
   ],
   "author": "Yuki_akai",
   "homepage": "https://github.com/yukiakai212/resolve-package",
+  "funding": "https://github.com/sponsors/yukiakai212",
   "engines": {
     "node": ">= 16"
   },
@@ -65,7 +66,7 @@
     "vitest": "^4.0.15"
   },
   "dependencies": {
-    "@yukiakai/find-up": "^1.1.2",
+    "@yukiakai/find-up": "^1.1.7",
     "resolve": "^1.22.10"
   }
 }

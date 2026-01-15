@@ -6,13 +6,13 @@
 [![Build Status][github-build-url]][github-url]
 [![codecov][codecov-image]][codecov-url]
 
-> 🔍 Reliable way to get the root directory or metadata of a Node.js package — even with `pnpm`!
+> Reliable way to get the root directory or metadata of a Node.js package — even with `pnpm`!
 
 **`@yukiakai/resolve-package`** helps you find the actual root directory of any installed package in your project (where its `package.json` is located), and even read that `package.json` — regardless of whether you use **npm**, **yarn**, or **pnpm** (including with symlinks and virtual stores).
 
 ---
 
-## 🚀 Why?
+## Why?
 
 Most existing solutions like `require.resolve`, `pkg-dir`, or `resolve` only give you the **entry file** path — not the actual root directory of the package.  
 In modern `pnpm` setups, they often fail or give incorrect results due to symlinks and virtual folders.
@@ -21,7 +21,7 @@ This library solves it by resolving the entry file, then walking up the director
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install @yukiakai/resolve-package
@@ -33,7 +33,7 @@ yarn add @yukiakai/resolve-package
 
 ---
 
-## 🔧 Usage
+## Usage
 
 ### ESM / TypeScript
 
@@ -61,7 +61,7 @@ console.log(resolveMetadata('express'));
 
 ---
 
-## 🧩 API
+## API
 
 ### `resolvePath(pkgName: string, basedir?: string): string | null`
 
@@ -75,7 +75,7 @@ console.log(resolveMetadata('express'));
 
 ---
 
-## ✅ Features
+## Features
 
 - Works with **pnpm**, **npm**, and **yarn**
 - Handles **symlinks**, **hoisted**, and **virtual stores**
@@ -83,7 +83,7 @@ console.log(resolveMetadata('express'));
 
 ---
 
-## 📂 Example output (with `pnpm`):
+## Example output (with `pnpm`):
 
 ```js
 resolvePath('vite');
@@ -95,7 +95,7 @@ resolveMetadata('vite');
 
 ---
 
-## 🧪 Run Tests
+## Run Tests
 
 ```bash
 npm run test
@@ -105,7 +105,7 @@ Uses [Vitest](https://vitest.dev/).
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Q: Why not just use `require.resolve()`?**  
 A: It only gives you the main file (`some/folder/index.js`, etc.), not the folder containing `package.json`. Also, it doesn't work correctly with ESM modules.
@@ -115,13 +115,13 @@ A: Yes. It uses `resolve` under the hood, and always finds the correct installed
 
 ---
 
-## 📦 Changelog
+## Changelog
 
 See full release notes in [CHANGELOG.md][changelog-url]
 
 ---
 
-## 📄 License
+## License
 
 MIT © 2025 [Yuki Akai](https://github.com/yukiakai212/)
 
