@@ -57,7 +57,7 @@
     "@vitest/coverage-v8": "^4.0.15",
     "dotenv": "^17.2.1",
     "eslint": "^9.32.0",
-    "glob": "^13.0.0",
+    "glob": "^13.0.1",
     "pkg-sandbox": "^1.0.1",
     "prettier": "^3.6.2",
     "tsup": "^8.5.1",
